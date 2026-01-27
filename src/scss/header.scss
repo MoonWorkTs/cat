@@ -1,0 +1,91 @@
+app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  .header-stiky {
+    background-color: #fff;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.09);
+    overflow: hidden;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+
+  &-logo img {
+    width: 220px;
+  }
+
+  &-actions {
+    display: flex;
+    gap: 40px;
+
+    button {
+      &.active {
+        color: #73c27e;
+
+        &::after {
+          transform: scaleX(1);
+          background-color: #73c27e;
+        }
+      }
+    }
+  }
+
+  &-burger {
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:active {
+      transform: scale(0.9);
+    }
+
+    &__line {
+      display: block;
+      border-radius: 10px;
+      width: 30px;
+      height: 4px;
+      background-color: #000;
+      margin: 5px 0;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  .header {
+    &-actions {
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .header {
+    padding: 10px 0;
+
+    &-actions {
+      display: none;
+    }
+
+    &-burger {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    &-logo {
+      img {
+        width: 150px;
+      }
+    }
+  }
+}

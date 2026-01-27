@@ -1,0 +1,56 @@
+<template id="sidebar-template">
+  <div class="sidebar">
+    <nav class="sidebar-menu">
+      <div class="sidebar-menu__logo">
+        <div>
+          <img src="../../assets/icons/logo.svg" alt="logo" />
+        </div>
+        <button class="sidebar-burger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40px"
+            height="40px"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M6 12H18M18 12L13 7M18 12L13 17"
+              stroke="#000000"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+      <ul class="sidebar-menu__list">
+        <li class="sidebar-menu__item">
+          <button data-target="about" class="btn_type-1">О нас</button>
+        </li>
+        <li class="sidebar-menu__item">
+          <button data-target="whatWeDo" class="btn_type-1">
+            Что мы делаем
+          </button>
+        </li>
+        <li class="sidebar-menu__item">
+          <button data-target="products" class="btn_type-1">Продукция</button>
+        </li>
+        <li class="sidebar-menu__item">
+          <button data-target="certificates" class="btn_type-1">
+            Сертификаты
+          </button>
+        </li>
+        <li class="sidebar-menu__item">
+          <button data-target="contact" class="btn_type-1">Контакты</button>
+        </li>
+        <li class="sidebar-menu__item">
+          <button data-target="form" class="btn_type-2">Задать вопрос</button>
+        </li>
+      </ul>
+      <div class="sidebar-menu__footer">
+        <p>© 2026 ООО «ДезХимТех»</p>
+      </div>
+    </nav>
+    <span class="sidebar-bg"></span>
+  </div>
+</template>

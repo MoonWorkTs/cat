@@ -1,0 +1,44 @@
+.topbar {
+  background: rgba(35, 35, 35, 1);
+  color: #fff;
+
+  &-info {
+    display: flex;
+    justify-content: end;
+    gap: 40px;
+    align-items: center;
+    padding: 5px 0;
+
+    &__tel,
+    &__email {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+
+      & a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .topbar {
+    &-info {
+      padding-top: 10px;
+      justify-content: space-between;
+      gap: 0px;
+
+      &__tel,
+      &__email {
+        font-size: 14px;
+      }
+    }
+  }
+}

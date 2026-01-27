@@ -1,0 +1,25 @@
+.products {
+  padding-top: 100px;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1.title {
+    margin-bottom: 100px;
+  }
+
+  &-list {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 720px) {
+  .products {
+    padding-top: 50px;
+
+    h1.title {
+      margin-bottom: 50px;
+    }
+  }
+}

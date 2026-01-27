@@ -1,0 +1,25 @@
+{
+  "name": "chemical-engineering-technology",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "concurrently \" nodemon \" \"npm run scss\"",
+    "scss": "sass --watch src/scss/main.scss public/styles/main.css"
+  },
+  "author": "MoonWorkTs",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "sass": "^1.94.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "connect-livereload": "^0.6.1",
+    "livereload": "^0.10.3",
+    "nodemon": "^3.1.11"
+  }
+}

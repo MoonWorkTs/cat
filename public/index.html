@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/site/icon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/site/icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/site/icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>ООО «ДезХимТех» - Производство химических продуктов</title>
+  </head>
+  <body>
+    <div id="root">
+      <app-topbar></app-topbar>
+      <app-header></app-header>
+      <app-welcome></app-welcome>
+      <app-about></app-about>
+      <app-products></app-products>
+      <app-form></app-form>
+      <app-certificates></app-certificates>
+      <app-footer></app-footer>
+      <app-sidebar></app-sidebar>
+      <app-top-scroll-btn></app-top-scroll-btn>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/imask/7.5.0/imask.min.js"
+      integrity="sha512-U/YSJLyyCl9/Kb/4wQ928C6GCStH8A73R/tzdbWP0vIvNwsjtFGbGJLZrSmuhoo5pyBYi5i6vBy3HDVP/jqMcw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+  </body>
+</html>

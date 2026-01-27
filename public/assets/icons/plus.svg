@@ -1,0 +1,43 @@
+<svg viewBox="0 0 168 386" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="168.000000" height="386.000000" fill="none" customFrame="#000000">
+	<defs>
+		<g id="pixso_custom_effect_0">
+			<effect visibility="visible" effectType="gaussianBlur" stdDeviation="2" />
+		</g>
+		<filter id="filter_0" width="42.256012" height="88.000000" x="112.870880" y="59.000000" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_0)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feBlend result="shape" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" />
+			<feGaussianBlur stdDeviation="0.666666687" result="effect_layerBlur_1" />
+		</filter>
+		<g id="pixso_custom_effect_1">
+			<effect visibility="visible" effectType="gaussianBlur" stdDeviation="4" />
+		</g>
+		<filter id="filter_1" width="42.671997" height="78.000000" x="62.662994" y="38.000000" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_1)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feBlend result="shape" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" />
+			<feGaussianBlur stdDeviation="1.33333337" result="effect_layerBlur_1" />
+		</filter>
+		<g id="pixso_custom_effect_2">
+			<effect visibility="visible" effectType="gaussianBlur" stdDeviation="2" />
+		</g>
+		<filter id="filter_2" width="28.000000" height="59.000000" x="130.000000" y="0.000000" filterUnits="userSpaceOnUse" customEffect="url(#pixso_custom_effect_2)" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feBlend result="shape" in="SourceGraphic" in2="BackgroundImageFix" mode="normal" />
+			<feGaussianBlur stdDeviation="0.666666687" result="effect_layerBlur_1" />
+		</filter>
+	</defs>
+	<g id="Group 1">
+		<path id="+" d="M71.8995 276.02L71.8995 149.876L96.0915 149.876L96.0915 276.02L71.8995 276.02ZM19.4835 224.468L19.4835 201.716L148.508 201.716L148.508 224.468L19.4835 224.468Z" opacity="0.400000006" fill="rgb(0,136,16)" fill-opacity="0.129999995" fill-rule="nonzero" />
+		<path id="+" d="M68.8995 227.468L68.8995 279.02L99.0915 279.02L99.0915 227.468L151.508 227.468L151.508 198.716L99.0915 198.716L99.0915 146.876L68.8995 146.876L68.8995 198.716L16.4835 198.716L16.4835 227.468L68.8995 227.468ZM68.8995 224.468L71.8995 224.468L71.8995 276.02L96.0915 276.02L96.0915 224.468L148.508 224.468L148.508 201.716L96.0915 201.716L96.0915 149.876L71.8995 149.876L71.8995 201.716L19.4835 201.716L19.4835 224.468L68.8995 224.468Z" opacity="0.400000006" fill="rgb(0,136,16)" fill-rule="evenodd" />
+		<g filter="url(#filter_0)">
+			<path id="+" d="M150.127 100.804L137.023 100.804L137.023 87.844L130.975 87.844L130.975 100.804L117.871 100.804L117.871 106.492L130.975 106.492L130.975 119.38L137.023 119.38L137.023 106.492L150.127 106.492L150.127 100.804Z" opacity="0.300000012" fill="rgb(0,136,16)" fill-opacity="0.129999995" fill-rule="nonzero" />
+			<path id="+" d="M153.127 109.492L153.127 97.804L140.023 97.804L140.023 84.844L127.975 84.844L127.975 97.804L114.871 97.804L114.871 109.492L127.975 109.492L127.975 122.38L140.023 122.38L140.023 109.492L153.127 109.492ZM137.023 109.492L137.023 106.492L150.127 106.492L150.127 100.804L137.023 100.804L137.023 87.844L130.975 87.844L130.975 100.804L117.871 100.804L117.871 106.492L130.975 106.492L130.975 119.38L137.023 119.38L137.023 109.492Z" opacity="0.300000012" fill="rgb(0,136,16)" fill-rule="evenodd" />
+		</g>
+		<g filter="url(#filter_1)">
+			<path id="+" d="M98.335 75.048L86.687 75.048L86.687 63.528L81.311 63.528L81.311 75.048L69.663 75.048L69.663 80.104L81.311 80.104L81.311 91.56L86.687 91.56L86.687 80.104L98.335 80.104L98.335 75.048Z" opacity="0.300000012" fill="rgb(0,136,16)" fill-opacity="0.129999995" fill-rule="nonzero" />
+			<path id="+" d="M101.335 83.104L101.335 72.048L89.687 72.048L89.687 60.528L78.311 60.528L78.311 72.048L66.663 72.048L66.663 83.104L78.311 83.104L78.311 94.56L89.687 94.56L89.687 83.104L101.335 83.104ZM86.687 83.104L86.687 80.104L98.335 80.104L98.335 75.048L86.687 75.048L86.687 63.528L81.311 63.528L81.311 75.048L69.663 75.048L69.663 80.104L81.311 80.104L81.311 91.56L86.687 91.56L86.687 83.104Z" opacity="0.300000012" fill="rgb(0,136,16)" fill-rule="evenodd" />
+		</g>
+		<g filter="url(#filter_2)">
+			<path id="+" d="M154.751 28.036L146.015 28.036L146.015 19.396L141.983 19.396L141.983 28.036L133.247 28.036L133.247 31.828L141.983 31.828L141.983 40.42L146.015 40.42L146.015 31.828L154.751 31.828L154.751 28.036Z" opacity="0.400000006" fill="rgb(0,136,16)" fill-rule="nonzero" />
+		</g>
+	</g>
+</svg>

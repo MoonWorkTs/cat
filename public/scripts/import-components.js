@@ -1,0 +1,12 @@
+import "../components/container/container.js";
+import "../components/topbar/topbar.js";
+import "../components/header/header.js";
+import "../components/welcome/welcome.js";
+import "../components/about/about.js";
+import "../components/form/form.js";
+import "../components/products/products.js";
+import "../components/footer/footer.js";
+import "../components/certificates/certificates.js";
+import "../components/partners/partners.js";
+import "../components/sidebar/sidebar.js";
+import "../components/top-scroll-btn/top-scroll-btn.js";

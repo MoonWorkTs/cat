@@ -1,0 +1,76 @@
+<template id="form-template">
+  <section id="form">
+    <div class="form">
+      <app-container>
+        <div class="form-wrapper">
+          <h1 class="title">Задать вопрос</h1>
+          <form action="" id="form" class="form-body">
+            <div class="form-body-wrapper">
+              <div class="form-body__inputs">
+                <div class="form-body__input">
+                  <h6>
+                    Имя
+                    <p style="color: red">*</p>
+                  </h6>
+                  <input name="name" id="form_name" type="text" />
+                </div>
+                <div class="form-body__input">
+                  <h6>
+                    Фамилия
+                    <p style="color: red">*</p>
+                  </h6>
+                  <input name="surname" id="form_surname" type="text" />
+                </div>
+                <div class="form-body__input">
+                  <h6>
+                    Электронная почта
+                    <p style="color: red">*</p>
+                  </h6>
+                  <input name="email" id="form_email" type="text" />
+                </div>
+                <div class="form-body__input">
+                  <h6>
+                    Номер телефона
+                    <p style="color: red">*</p>
+                  </h6>
+                  <input name="phone" id="form_phone" type="text" />
+                </div>
+              </div>
+              <div class="form-body__textarea">
+                <h6>Комментарий</h6>
+                <textarea name="comment"></textarea>
+              </div>
+              <div class="form-body__privacy">
+                <div class="form-body__privacy--checkbox">
+                  <label for="privacy"> </label>
+                  <input type="checkbox" name="privacy" id="from_privacy" />
+                </div>
+                <span>
+                  Отправляя заявку, я даю согласие на обработку персональных
+                  данных в соответствии с
+                  <a
+                    href="privacy-policy.html"
+                    target="_blank"
+                    class="form-body__privacy--link"
+                    >Политикой конфиденциальности</a
+                  >
+                  <span style="color: red">*</span></span
+                >
+              </div>
+              <div class="form-body__submit">
+                <button class="btn_type-2">Отправить</button>
+                <p><span style="color: red">*</span> - обязательные поля</p>
+              </div>
+            </div>
+            <img src="../../assets/img/form.png" alt="form" />
+          </form>
+          <img
+            src="../../assets/icons/plus.svg"
+            alt="plus"
+            class="form-wrapper__plus"
+          />
+        </div>
+      </app-container>
+    </div>
+  </section>
+</template>
