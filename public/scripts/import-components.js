@@ -10,3 +10,4 @@ import "../components/certificates/certificates.js";
 import "../components/partners/partners.js";
 import "../components/sidebar/sidebar.js";
 import "../components/top-scroll-btn/top-scroll-btn.js";
+import "../components/alert/alert.js";

@@ -13,12 +13,13 @@ document.addEventListener("DOMContentLoaded", async () => {
   await customElements.whenDefined("app-footer");
   await customElements.whenDefined("app-sidebar");
   await customElements.whenDefined("app-top-scroll-btn");
+  await customElements.whenDefined("app-alert");
 
   // Инициализация необходимых элементов
   const sections = document.querySelectorAll("section[id]");
   const navBtns = document.querySelectorAll("[data-target]");
   const readMoreProductBtn = document.getElementById("read-more-product-btn");
-  const readMoreCertBtn = document.getElementById("read-more-certificates-btn");
+  // const readMoreCertBtn = document.getElementById("read-more-certificates-btn");
   const burgerNavBtn = document.querySelector(".header-burger");
   const burgerSidebarBtn = document.querySelector(".sidebar-burger");
   const sidebarBg = document.querySelector(".sidebar-bg");
@@ -32,16 +33,16 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // Работа с медиа-запросами
   const mql1120 = window.matchMedia("(max-width: 1120px)");
-  const mql1080 = window.matchMedia("(max-width: 1080px)");
+  // const mql1080 = window.matchMedia("(max-width: 1080px)");
   const mql980 = window.matchMedia("(max-width: 980px)");
 
   mql1120.addEventListener("change", (e) => {
     !e.matches ? removeProductProp() : null;
   });
 
-  mql1080.addEventListener("change", (e) => {
-    !e.matches ? removeCertProp() : null;
-  });
+  // mql1080.addEventListener("change", (e) => {
+  //   !e.matches ? removeCertProp() : null;
+  // });
 
   mql980.addEventListener("change", (e) => {
     !e.matches ? removeSidebarProp() : null;
@@ -54,11 +55,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   // Удаление свойств сертификатов
-  function removeCertProp() {
-    document.querySelector(".certificates-container").style.height = null;
-    document.querySelector(".certificates-container").classList.remove("open");
-    readMoreCertBtn.classList.remove("open");
-  }
+  // function removeCertProp() {
+  //   document.querySelector(".certificates-container").style.height = null;
+  //   document.querySelector(".certificates-container").classList.remove("open");
+  //   readMoreCertBtn.classList.remove("open");
+  // }
 
   // Удаление свойств продукта
   function removeProductProp() {
@@ -75,7 +76,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     e.preventDefault();
 
     const text = document.querySelector(".product-text");
-    let fullHeight = text.querySelector("p").scrollHeight;
+    let textFullHeight = text.querySelector("p").scrollHeight;
+    let noteFullHeight = text.querySelector("#note").scrollHeight;
+    let fullHeight = textFullHeight + noteFullHeight + 15;
 
     if (readMoreProductBtn.classList.contains("open")) {
       fullHeight = 105;
@@ -148,7 +151,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   // Навешиваем события
   readMoreProductBtn.addEventListener("click", toggleReadMoreProductText);
-  readMoreCertBtn.addEventListener("click", toggleReadMoreCert);
+  // readMoreCertBtn.addEventListener("click", toggleReadMoreCert);
   burgerNavBtn.addEventListener("click", toggleSidebar);
   burgerSidebarBtn.addEventListener("click", toggleSidebar);
   sidebarBg.addEventListener("click", toggleSidebar);

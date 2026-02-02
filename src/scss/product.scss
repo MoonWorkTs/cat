@@ -29,6 +29,14 @@
 
   &-text {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    span {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 
   &-compound {
@@ -137,6 +145,11 @@
       }
 
       p {
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      span {
         font-size: 14px;
         line-height: 17px;
       }

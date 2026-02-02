@@ -7,33 +7,44 @@
           <form action="" id="form" class="form-body">
             <div class="form-body-wrapper">
               <div class="form-body__inputs">
-                <div class="form-body__input">
-                  <h6>
-                    Имя
-                    <p style="color: red">*</p>
-                  </h6>
-                  <input name="name" id="form_name" type="text" />
+                <div class="form-body__inputs--top">
+                  <div class="form-body__input">
+                    <h6>
+                      Фамилия
+                      <p style="color: red">*</p>
+                    </h6>
+                    <input name="surname" id="form_surname" type="text" />
+                  </div>
+                  <div class="form-body__input">
+                    <h6>
+                      Имя
+                      <p style="color: red">*</p>
+                    </h6>
+                    <input name="name" id="form_name" type="text" />
+                  </div>
+                  <div class="form-body__input">
+                    <h6>
+                      Отчество
+                      <p style="color: red">*</p>
+                    </h6>
+                    <input name="lastname" id="form_lastname" type="text" />
+                  </div>
                 </div>
-                <div class="form-body__input">
-                  <h6>
-                    Фамилия
-                    <p style="color: red">*</p>
-                  </h6>
-                  <input name="surname" id="form_surname" type="text" />
-                </div>
-                <div class="form-body__input">
-                  <h6>
-                    Электронная почта
-                    <p style="color: red">*</p>
-                  </h6>
-                  <input name="email" id="form_email" type="text" />
-                </div>
-                <div class="form-body__input">
-                  <h6>
-                    Номер телефона
-                    <p style="color: red">*</p>
-                  </h6>
-                  <input name="phone" id="form_phone" type="text" />
+                <div class="form-body__inputs--bottom">
+                  <div class="form-body__input">
+                    <h6>
+                      Электронная почта
+                      <p style="color: red">*</p>
+                    </h6>
+                    <input name="email" id="form_email" type="text" />
+                  </div>
+                  <div class="form-body__input">
+                    <h6>
+                      Номер телефона
+                      <p style="color: red">*</p>
+                    </h6>
+                    <input name="phone" id="form_phone" type="text" />
+                  </div>
                 </div>
               </div>
               <div class="form-body__textarea">
@@ -46,8 +57,8 @@
                   <input type="checkbox" name="privacy" id="from_privacy" />
                 </div>
                 <span>
-                  Отправляя заявку, я даю согласие на обработку персональных
-                  данных в соответствии с
+                  Отправляя данные формы, я даю согласие на обработку
+                  персональных данных в соответствии с
                   <a
                     href="privacy-policy.html"
                     target="_blank"
@@ -58,7 +69,20 @@
                 >
               </div>
               <div class="form-body__submit">
-                <button class="btn_type-2">Отправить</button>
+                <button class="btn_type-2">
+                  <p>Отправить</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#fff"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 16 16"
+                  >
+                    <g>
+                      <path d="M8,1V2.8A5.2,5.2,0,1,1,2.8,8H1A7,7,0,1,0,8,1Z" />
+                    </g>
+                  </svg>
+                </button>
                 <p><span style="color: red">*</span> - обязательные поля</p>
               </div>
             </div>

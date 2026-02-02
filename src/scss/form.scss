@@ -27,13 +27,25 @@
     &-wrapper {
       display: flex;
       flex-direction: column;
-      gap: 32px;
+      gap: 24px;
     }
 
     &__inputs {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 32px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+
+      &--top {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 24px;
+      }
+
+      &--bottom {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+      }
     }
 
     &__input {
@@ -167,8 +179,36 @@
 
       button {
         padding: 15px 60px;
+
+        svg {
+          animation: rotate 1s ease-in-out infinite;
+          display: none;
+        }
+      }
+
+      &.submitting {
+        button {
+          pointer-events: none;
+
+          p {
+            display: none;
+          }
+
+          svg {
+            display: block;
+          }
+        }
       }
     }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 
@@ -176,12 +216,34 @@
   .form {
     &-body {
       gap: 50px;
+
+      img {
+        max-width: 450px;
+      }
+
+      &-wrapper {
+        gap: 12px;
+      }
+
+      &__inputs {
+        gap: 12px;
+
+        &--top {
+          gap: 12px 24px;
+        }
+      }
     }
   }
 }
 
 @media (max-width: 1200px) {
   .form {
+    &-wrapper {
+      &__plus {
+        width: 100px;
+      }
+    }
+
     &-body {
       flex-direction: column;
       gap: 0;
@@ -217,6 +279,18 @@
     }
 
     &-body {
+      &__inputs {
+        &--top {
+          grid-template-columns: 1fr 1fr;
+
+          .form-body__input {
+            &:last-child {
+              grid-column: span 2;
+            }
+          }
+        }
+      }
+
       &__input {
         h6 {
           font-size: 16px;
@@ -234,13 +308,20 @@
         width: 100%;
       }
 
-      &-wrapper {
-        gap: 20px;
-      }
-
       &__inputs {
-        grid-template-columns: 1fr;
-        gap: 20px 0;
+        &--top {
+          grid-template-columns: 1fr;
+
+          .form-body__input {
+            &:last-child {
+              grid-column: span 1;
+            }
+          }
+        }
+
+        &--bottom {
+          grid-template-columns: 1fr;
+        }
       }
 
       &__textarea {
@@ -250,13 +331,27 @@
       }
 
       &__submit {
+        flex-direction: column-reverse;
+        gap: 20px;
+        align-items: start;
+
         button {
           width: 100%;
+          display: flex;
+          justify-content: center;
         }
       }
 
       &__privacy {
         font-size: 14px;
+
+        &--link {
+          font-size: 14px;
+        }
+
+        span {
+          font-size: 14px;
+        }
       }
     }
   }

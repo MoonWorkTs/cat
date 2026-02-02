@@ -12,6 +12,7 @@
 @import "./sidebar.scss";
 @import "./top-scroll-btn.scss";
 @import "./documents.scss";
+@import "./alert.scss";
 
 $main-color: #73c27e;
 $main-color-active: #61a36a;
@@ -19,6 +20,10 @@ $main-color-active: #61a36a;
 body {
   font-family: "Montserrat", sans-serif;
   background: rgba(243, 243, 243, 1);
+}
+
+#root {
+  overflow-x: hidden;
 }
 
 .hidden {

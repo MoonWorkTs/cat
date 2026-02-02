@@ -28,7 +28,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
   .topbar {
     &-info {
       padding-top: 10px;
@@ -38,6 +38,22 @@
       &__tel,
       &__email {
         font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .topbar {
+    &-info {
+      align-items: start;
+      flex-direction: column;
+      gap: 5px;
+
+      &__email {
+        img {
+          width: 24px;
+        }
       }
     }
   }

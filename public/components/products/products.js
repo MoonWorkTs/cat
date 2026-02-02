@@ -17,7 +17,7 @@ class Products extends HTMLElement {
 
 class Product extends HTMLElement {
   static get observedAttributes() {
-    return ["img", "title", "text", "compound"];
+    return ["img", "title", "text", "note", "compound"];
   }
 
   static async define() {
@@ -52,7 +52,8 @@ class Product extends HTMLElement {
 
     clone.querySelector("#title").textContent =
       this.getAttribute("title") || "";
-    clone.querySelector("#text").textContent = this.getAttribute("text") || "";
+    clone.querySelector("#text").innerHTML = this.getAttribute("text") || "";
+    clone.querySelector("#note").innerHTML = this.getAttribute("note") || "";
     clone.querySelector("#img").src = this.getAttribute("img") || "";
 
     this.appendChild(clone);

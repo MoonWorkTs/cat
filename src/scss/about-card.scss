@@ -18,6 +18,11 @@
     margin-bottom: 50px;
     position: relative;
 
+    &-img {
+      width: 142px;
+      height: 142px;
+    }
+
     &-blot {
       position: absolute;
       top: 50%;
@@ -35,7 +40,7 @@
 
     & h2 {
       margin-bottom: 15px;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 500;
       text-transform: uppercase;
       color: #258830;
@@ -53,6 +58,12 @@
   .about-cards app-about-card:nth-child(3) {
     grid-column: span 2;
   }
+
+  .about-card {
+    &__wrapper {
+      padding: 30px;
+    }
+  }
 }
 
 @media (max-width: 810px) {
@@ -67,7 +78,6 @@
   }
 
   .about-card {
-    padding: 20px;
     min-width: 220px;
 
     &__wrapper {
