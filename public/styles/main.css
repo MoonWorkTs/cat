@@ -1411,7 +1411,7 @@ body {
   background: rgb(243, 243, 243);
 }
 
-#root {
+.wrapper {
   overflow-x: hidden;
 }
 

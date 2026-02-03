@@ -82,8 +82,7 @@ app.post("/api/form", formLimiter, async (req, res) => {
       `💬 Комментарий: ${comment}`,
     ].join("\n");
 
-    const chatIds = String(process.env.TELEGRAM_CHAT_IDS  ).split(";");
-    console.log(chatIds)
+    const chatIds = String(process.env.TELEGRAM_CHAT_IDS).split(";");
 
     for (const chatId of chatIds) {
       await bot.sendMessage(chatId, botText, {
