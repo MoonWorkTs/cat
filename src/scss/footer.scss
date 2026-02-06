@@ -21,8 +21,12 @@
     &__partner {
       display: flex;
       flex-direction: column;
-      gap: 15px;
+      align-items: center;
       margin-top: 20px;
+
+      h1 {
+        font-weight: 500;
+      }
 
       img {
         max-width: 300px;
@@ -154,6 +158,10 @@
       width: 200px;
 
       &__partner {
+        h1 {
+          font-size: 12px;
+        }
+
         img {
           height: auto;
         }
@@ -250,6 +258,20 @@
 
 @media (max-width: 600px) {
   .footer {
+    &-logo {
+      width: 100%;
+
+      img {
+        width: 200px;
+      }
+
+      &__partner {
+        h1 {
+          font-size: 16px;
+        }
+      }
+    }
+
     &-inner {
       display: flex;
       flex-direction: column;

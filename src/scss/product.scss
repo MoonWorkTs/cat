@@ -40,9 +40,9 @@
   }
 
   &-compound {
-    h1 {
-      margin-bottom: 10px;
-    }
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 
     &__list {
       list-style: none;
@@ -88,6 +88,24 @@
       &::before {
         content: "Еще...";
       }
+    }
+  }
+
+  &-note {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 5px;
+    align-items: center;
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+      color: rgb(248, 114, 114);
     }
   }
 }
@@ -148,10 +166,12 @@
         font-size: 14px;
         line-height: 17px;
       }
+    }
 
-      span {
-        font-size: 14px;
-        line-height: 17px;
+    &-note {
+      p {
+        font-size: 12px;
+        line-height: 12px;
       }
     }
 
