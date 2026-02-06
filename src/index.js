@@ -51,6 +51,14 @@ app.get("/", (_, res) => {
   res.sendFile(path.join(__dirname, "../public", "index.html"));
 });
 
+app.get("/privacy-policy", (_, res) => {
+  res.sendFile(path.join(__dirname, "../public", "privacy-policy.html"));
+});
+
+app.get("/user-agreement", (_, res) => {
+  res.sendFile(path.join(__dirname, "../public", "user-agreement.html"));
+});
+
 app.post("/api/form", formLimiter, async (req, res) => {
   try {
     if (req.headers.origin !== allowedOrigins[0]) {
