@@ -935,6 +935,22 @@ app-header .header-stiky {
   gap: 15px;
   font-weight: 500;
 }
+.footer-info__contact-social {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+.footer-info__contact-social #telegram,
+.footer-info__contact-social #vk {
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+.footer-info__contact-social #telegram:hover {
+  color: #0088cc;
+}
+.footer-info__contact-social #vk:hover {
+  color: #4c75a3;
+}
 .footer-info-list {
   display: flex;
   flex-direction: column;

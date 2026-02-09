@@ -19,13 +19,16 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 8082;
+const isDev = process.env.NODE_ENV !== "production";
 
-const lrserver = livereload.createServer();
-lrserver.watch(path.join(__dirname, "../public"));
+if (isDev) {
+  const lrserver = livereload.createServer();
+  lrserver.watch(path.join(__dirname, "../public"));
+  app.use(connectLivereload());
+}
 
 const allowedOrigins = [process.env.CORS_ORIGIN];
 
-app.use(connectLivereload());
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "../public")));
 app.use(

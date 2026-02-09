@@ -88,6 +88,26 @@
         gap: 15px;
         font-weight: 500;
       }
+
+      &-social {
+        display: flex;
+        gap: 15px;
+        width: 100%;
+
+        #telegram,
+        #vk {
+          color: #000;
+          transition: all 0.2s ease-in-out;
+        }
+
+        #telegram:hover {
+          color: #0088cc;
+        }
+
+        #vk:hover {
+          color: #4c75a3;
+        }
+      }
     }
 
     &-list {

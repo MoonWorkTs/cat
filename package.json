@@ -4,8 +4,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "concurrently \" nodemon \" \"npm run scss\"",
+    "start": "node src/index.js NODE_ENV=production",
+    "dev": "concurrently \" nodemon \" \"npm run scss\" NODE_ENV=development",
     "scss": "sass --watch src/scss/main.scss public/styles/main.css"
   },
   "author": "MoonWorkTs",
