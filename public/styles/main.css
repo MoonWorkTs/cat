@@ -1091,6 +1091,7 @@ app-header .header-stiky {
   }
   .footer-logo__partner {
     flex-direction: column;
+    padding: 40px 20px;
   }
   .footer-logo__partner img {
     width: auto;

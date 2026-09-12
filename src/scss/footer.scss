@@ -315,13 +315,16 @@
         width: 200px;
       }
 
+
       &__partner {
         flex-direction: column;
+        padding: 40px 20px;
 
         img {
           width: auto;
         }
       }
+
     }
 
     &-inner {
